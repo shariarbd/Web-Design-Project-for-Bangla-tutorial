@@ -1,4 +1,10 @@
-jQuery(document).ready(function($) {
+jQuery(document).ready(function($) { 
+
+	$(window).on("load", function(){
+		$('.preloader').fadeOut();
+	});
+
+
 	$('#menutrigger').click(function(){
 		$('.menu>ul').slideToggle();
 	});
